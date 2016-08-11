@@ -1,0 +1,52 @@
+{
+  "name": "jquery-gcse",
+  "title": "jQuery Google Custom Search Engine",
+  "version": "0.2.0",
+  "description": "A lightweight wrapper around Google's Custom Search Engine.",
+  "homepage": "https://github.com/abemedia/jquery-gcse",
+  "author": "Adam Bouqdib (http://abemedia.co.uk)",
+  "keywords": [
+    "jquery",
+    "google",
+    "cse",
+    "search"
+  ],
+  "maintainers": [
+    "Adam Bouqdib (http://abemedia.co.uk)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abeMedia/jquery-gcse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abeMedia/jquery-gcse/issues"
+  },
+  "main": [
+    "dist/js/jquery.gcse.js",
+    "dist/css/jquery.gcse.css"
+  ],
+  "license": "GPL-3.0",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "jquery": ">=1.7"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-qunit": "^1.2.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "less-plugin-autoprefix": "^1.5.1",
+    "qunitjs": "^2.0.1"
+  }
+}
