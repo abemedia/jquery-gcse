@@ -2,7 +2,7 @@
   "name": "gcse",
   "title": "jQuery Google Custom Search Engine",
   "description": "A lightweight wrapper around Google's Custom Search Engine.",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "homepage": "https://github.com/abemedia/jquery-gcse",
   "author": {
     "name": "ABE Media - Web Design Brighton",

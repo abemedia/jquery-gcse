@@ -205,6 +205,13 @@ a.gs-image {
   -o-transition: border 0.2s ease-in-out;
   transition: border 0.2s ease-in-out;
 }
+a.gs-image > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
 a.gs-image:hover, a.gs-image:focus {
   border-color: #337ab7;
 }
@@ -254,6 +261,7 @@ a.gs-image:hover, a.gs-image:focus {
 
 /* Hidden Elements
 -------------------------------------------------- */
+.gs-watermark,
 .gsc-resultsHeader,
 .gsc-tabsAreaInvisible,
 .gs-visibleUrl-short,
