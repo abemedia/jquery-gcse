@@ -1,6 +1,6 @@
 /*!
-* jQuery Google CSE v0.2.0 (https://github.com/abemedia/jquery-gcse)
-* Copyright (c) 2016 Adam Bouqdib
+* jQuery Google CSE v0.3.0 (https://github.com/abemedia/jquery-gcse)
+* Copyright (c) 2017 Adam Bouqdib
 * Licensed under GPL-3.0 (http://abemedia.co.uk/license) 
 */
 

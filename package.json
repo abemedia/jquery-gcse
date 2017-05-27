@@ -1,7 +1,7 @@
 {
   "name": "jquery-gcse",
   "title": "jQuery Google Custom Search Engine",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A lightweight wrapper around Google's Custom Search Engine.",
   "homepage": "https://github.com/abemedia/jquery-gcse",
   "author": "Adam Bouqdib (http://abemedia.co.uk)",
@@ -37,12 +37,14 @@
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",
+    "bootstrap-sass": "^3.3.7",
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-cssmin": "^1.0.1",
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-qunit": "^1.2.0",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",

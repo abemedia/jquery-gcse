@@ -1,0 +1,222 @@
+/* Google Custom Search - Bootstrap Theme
+-------------------------------------------------- */
+
+$gs-title-size: $font-size-h4;
+$gs-url-color: $brand-success;
+$gs-thumbnail-size: 90px;
+
+
+
+/* Search Form
+-------------------------------------------------- */
+
+/* Form Wrapper */
+table.gsc-search-box {
+  width: 100%;
+  margin: 0 0 ($line-height-computed / 2);
+}
+
+/* Query Field */
+.gsc-input {
+  width: 100%;
+}
+input.gsc-input {
+  // combined and trimmed down the following from bootstrap:
+  //.form-control();
+  //.input-lg();
+  //.border-right-radius(0);
+
+  display: block;
+  width: 100%;
+  height: $input-height-large;
+  padding: $padding-large-vertical $padding-large-horizontal;
+  font-size: $font-size-large;
+  line-height: $line-height-large;
+  color: $input-color;
+  background-color: $input-bg;
+  background-image: none;
+  border: 1px solid $input-border;
+  border-radius: $input-border-radius-large 0 0 $input-border-radius-large;
+  @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+  @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
+  @include form-control-focus;
+  @include placeholder;
+}
+
+/* Search Button */
+input.gsc-search-button {
+  // combined and trimmed down the following from bootstrap:
+  //.btn();
+  //.btn-lg();
+  //.border-left-radius(0);
+  //.btn-primary();
+
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: $btn-font-weight;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, 0 $btn-border-radius-large $btn-border-radius-large 0);
+  @include user-select(none);
+
+  &,
+  &:active {
+    &:focus {
+      @include tab-focus;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: $btn-default-color;
+    text-decoration: none;
+  }
+
+  &:active {
+    outline: 0;
+    background-image: none;
+    @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+  }
+
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+}
+
+/* Google Logo */
+.gsc-branding {
+  float: right;
+}
+
+.gsc-completion-container {
+}
+
+
+
+/* Grid
+-------------------------------------------------- */
+.gsc-wrapper {
+  @include make-row;
+}
+
+/* Results Column */
+.gsc-resultsbox-visible {
+  @include make-sm-column(8);
+}
+
+/* Ads Column */
+.gsc-adBlock {
+  @include make-sm-column(4);
+  margin-top: $line-height-computed;
+  float: right !important;
+}
+
+
+
+/* Search Results
+-------------------------------------------------- */
+
+/* Result Wrapper */
+.gsc-result {
+  margin-top: $line-height-computed;
+  td {
+    vertical-align: top;
+  }
+}
+
+/* Result Title */
+.gs-title {
+  font-size: $gs-title-size;
+}
+
+/* Result URL */
+.gs-visibleUrl-long {
+  color: $gs-url-color;
+}
+
+/* Result Thumbnail */
+.gs-image-box {
+  margin-right: 10px;
+  width: $gs-thumbnail-size;
+}
+a.gs-image {
+  // trimmed down the following from bootstrap:
+  //.thumbnail();
+  display: block;
+  padding: $thumbnail-padding;
+  margin-bottom: 0; // modified
+  line-height: $line-height-base;
+  background-color: $thumbnail-bg;
+  border: 1px solid $thumbnail-border;
+  border-radius: $thumbnail-border-radius;
+  @include transition(border .2s ease-in-out);
+  &:hover,
+  &:focus {
+    border-color: $link-color;
+  }
+}
+
+
+
+/* Pagination
+-------------------------------------------------- */
+.gsc-cursor {
+  display: inline-block;
+  margin: $line-height-computed 0;
+  border-radius: $border-radius-base;
+}
+.gsc-cursor-page {
+  position: relative;
+  float: left; // Collapse white-space
+  padding: $padding-base-vertical $padding-base-horizontal;
+  line-height: $line-height-base;
+  text-decoration: none;
+  color: $pagination-color;
+  background-color: $pagination-bg;
+  border: 1px solid $pagination-border;
+  margin-left: -1px;
+  &:hover,
+  &:focus {
+    z-index: 3;
+    color: $pagination-hover-color;
+    background-color: $pagination-hover-bg;
+    border-color: $pagination-hover-border;
+  }
+  &:first-child {
+    margin-left: 0;
+    @include border-left-radius($border-radius-base);
+  }
+  &:last-child {
+    @include border-right-radius($border-radius-base);
+  }
+}
+.gsc-cursor-current-page {
+  &,
+  &:hover,
+  &:focus {
+    z-index: 2;
+    color: $pagination-active-color;
+    background-color: $pagination-active-bg;
+    border-color: $pagination-active-border;
+    cursor: default;
+  }
+}
+
+
+
+/* Hidden Elements
+-------------------------------------------------- */
+// .gs-watermark,
+.gsc-resultsHeader,
+.gsc-tabsAreaInvisible,
+.gs-visibleUrl-short,
+.gsc-url-top,
+.gsc-thumbnail-inside,
+.gsc-adBlockInvisible,
+.gsc-adBlockNoHeight
+.gsc-clear-button {
+  display: none !important;
+}
